@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <section class="main__logo">
+            <h1 class="main__h1"><img class="main__img" src="img/logo.svg" alt="Alura Logo"></h1>
+        </section>
+        <section class="main__form">
+            <textarea class="main__textarea" name="mensaje" id="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="main__footer">
+                <div class="main__small">
+                    <small>Solo letras minúsculas y sin acentos</small>
+                </div>
+                <div class="main__buttons">
+                    <button class="main__button main__button-primary" id="encriptar">Encriptar</button>
+                    <button class="main__button main__button-secondary" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="aside">
+        <section class="aside__content" id="ningunMensaje">
+            <div class="aside__img">
+                <img src="img/muneco.svg" alt="Ningun mensaje encontrado - imagen">
+            </div>
+            <div class="aside__text aside__none">
+                <h2 class="aside__h2">Ningún mensaje fue encontrado</h2>
+                <p class="aside__p">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+        <section class="aside__content aside__message aside__content--none" id="mensajeEncontrado">
+            <p class="aside__encrypt" id="mensajeEncriptado">Hola</p>
+            <button class="aside__button" id="copiarMensaje">Copiar</button>
+        </section>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>

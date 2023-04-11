@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*
+    Reset CSS
+*/
+
+
+/* Disable animations */
+
+@media (prefers-reduced-motion: reduce){
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* Reset margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    nav, h1, h2, label, span, input, .code__container {
+        transition: background 1s ease, color 1s ease, text-shadow 1s ease, border 1s ease-out;
+    }
+    h3 {
+        transition: color .75s ease;
+    }
+    
+
+    &.bg-dark {
+        transition: opacity 1s ease;
+    }
+}
+
+
+/* Images */
+
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+/* Reset Link */
+
+a {
+    display: block;
+}
+
+/* except paragraph */
+p a {
+    display: inline;
+}
+
+/* Remove all points in <li> */
+li {
+    list-style-type: none;
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable default styles from paragraph tags */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Prevent problems with pseudoelements from quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Selection paragraph config */
+::selection {
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--primary-gradient-color);
+    text-shadow: none;
+}
+
+/* Level problems of typography and placement of forms */
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+
+/* Table reset */
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Prevent SVG problems */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+    * {
+        fill: currentColor;
+    }
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    line-height: 1.4em;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
