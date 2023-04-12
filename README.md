@@ -1,8 +1,8 @@
-<div align="center"><img src="" width="200"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/one.png" width="200"/></div>
 
 # 🚀 Challenge Encriptador | Oracle + Alura
 <p align="center" >
-     <img width="500" heigth="300" src="">
+     <img width="500" heigth="300" src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/screenshot.png">
 </p>
 <div align="center">
     <img src="https://img.shields.io/badge/JavaScript-5A5A5A?logo=javascript&logoColor=yelllow"/>
