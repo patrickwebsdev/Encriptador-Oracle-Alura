@@ -49,4 +49,4 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 
 # Autor
 
-- ![Linkedin](https://img.shields.io/badge/patrickwebsdev-0077B5?style=flat&logo=linkedin&logoColor=white)(https://www.linkedin.com/in/patrickwebsdev/)
+- [![Linkedin](https://img.shields.io/badge/patrickwebsdev-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickwebsdev/)
