@@ -8,6 +8,7 @@
     <img src="https://img.shields.io/badge/JavaScript-5A5A5A?logo=javascript&logoColor=yelllow&style=for-the-badge"/>
     <img src="https://img.shields.io/badge/HTML-5A5A5A?logo=html5&style=for-the-badge" />
     <img src="https://img.shields.io/badge/CSS-5A5A5A?logo=css3&logoColor=01A3D8&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/SASS-CD6799?logo=css3&logoColor=FFFFFF&style=for-the-badge" />
 </div>
 
 # 📝 Descripción
