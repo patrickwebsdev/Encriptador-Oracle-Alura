@@ -3,7 +3,6 @@
     Reset CSS
 */
 
-
 /* Disable animations */
 
 @media (prefers-reduced-motion: reduce){
@@ -21,20 +20,7 @@
     border: 0;
     box-sizing: border-box;
     vertical-align: baseline;
-    nav, h1, h2, label, span, input, .code__container {
-        transition: background 1s ease, color 1s ease, text-shadow 1s ease, border 1s ease-out;
-    }
-    h3 {
-        transition: color .75s ease;
-    }
-    
-
-    &.bg-dark {
-        transition: opacity 1s ease;
-    }
 }
-
-
 /* Images */
 
 img, picture, video, iframe, figure {
@@ -82,7 +68,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 /* Selection paragraph config */
 ::selection {
     background-color: rgba(0, 0, 0, .5);
-    color: var(--primary-gradient-color);
     text-shadow: none;
 }
 
