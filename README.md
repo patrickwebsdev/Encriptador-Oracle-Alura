@@ -5,7 +5,7 @@
      <img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/screenshot.png">
 </p>
 <div align="center">
-    <img src="https://img.shields.io/badge/JavaScript-D6DF00?logo=javascript&logoColor=FFFFFF&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/JavaScript-FEFF01?logo=javascript&style=for-the-badge"/>
     <img src="https://img.shields.io/badge/HTML-EC6231?logo=html5&logoColor=FFFFFF&style=for-the-badge" />
     <img src="https://img.shields.io/badge/CSS-01A3D8?logo=css3&logoColor=FFFFFF&style=for-the-badge" />
     <img src="https://img.shields.io/badge/SASS-CD6799?logo=sass3&logoColor=FFFFFF&style=for-the-badge" />
