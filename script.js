@@ -5,6 +5,8 @@ const ningunMensaje = document.getElementById('ningunMensaje');
 const mensajeEncontrado = document.getElementById('mensajeEncontrado');
 const copiarMensaje = document.getElementById('copiarMensaje');
 const mensajeEncriptado = document.getElementById('mensajeEncriptado');
+const modal = document.getElementById("modal");
+const modalButton = document.getElementById("modalButton");
 
 const llaves = {
     'e': 'enter',
@@ -35,21 +37,34 @@ function encriptarTexto(text, diccionario){
     return text.replace(preRegExp(diccionario), (match) => diccionario[match]);
 }
 
-function toggleMensaje(texto){
-    if(mensajeEncontrado.classList.contains('aside__content--none')){
-        mensajeEncontrado.classList.toggle('aside__content--none');
-        ningunMensaje.classList.toggle('aside__content--none');
+function checkString(string){
+    let check = /[^a-z0-9 \s]/g.test(string);
+    if(check){
+        modal.style.display = "flex";
     }
-    mensajeEncriptado.innerHTML = texto;
+    return !check;
 }
 
+function toggleMensaje(texto, textoEncriptado){
+    if(checkString(texto)){
+        if(mensajeEncontrado.classList.contains('aside__content--none')){
+            mensajeEncontrado.classList.toggle('aside__content--none');
+            ningunMensaje.classList.toggle('aside__content--none');
+        }
+        mensajeEncriptado.innerHTML = textoEncriptado;
+    }
+}
+modalButton.addEventListener('click', function(e){
+    e.preventDefault();
+    modal.style.display = "none";
+});
 encriptar.addEventListener('click', function(e){
     e.preventDefault();
-    toggleMensaje(encriptarTexto(mensaje.value, llaves));
+    toggleMensaje(mensaje.value, encriptarTexto(mensaje.value, llaves));
 })
 desencriptar.addEventListener('click', function(e){
     e.preventDefault();
-    toggleMensaje(encriptarTexto(mensaje.value, reversedLlaves));
+    toggleMensaje(mensaje.value, encriptarTexto(mensaje.value, reversedLlaves));
 })
 copiarMensaje.addEventListener('click', () => {
     navigator.clipboard.writeText(mensajeEncriptado.innerHTML);

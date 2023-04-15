@@ -172,6 +172,65 @@ body {
         }
     }
 }
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    &__container {
+        width: 35vw;
+        background-color: #4EA1FA;
+        height: 50vh;
+        border-radius: 2em;
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__header {
+        width: 100%;
+        text-align: center;
+    }
+    &__title {
+        font-size: 2em;
+    }
+    &__body {
+        text-align: center;
+    }
+    &__p {
+        font-size: 1.5em;
+    }
+    &__footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button {
+        border-radius: 0.5em;
+        margin-top: 1em;
+        padding: 1em;
+        min-height: 6vh;
+        font-weight: 600;
+        font-family: 1.5em;
+        width: 100%;
+        cursor: pointer;
+        background-color: #1D1E23;
+        border: 0.15em solid #1D1E23;
+        color: #4EA1FA;
+        transition: opacity 250ms;
+        margin-left: 0.75em;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
 @media screen and (max-width: 1200px){
     .main {
         width: 60vw;
@@ -222,6 +281,11 @@ body {
             font-size: 1.5em;
         }
     }
+    .modal {
+        &__container {
+            width: 75vw;
+        }
+    }
 }
 @media screen and (max-width: 767px){
     .main {
@@ -239,6 +303,11 @@ body {
     .aside {
         &__encrypt {
             font-size: 1.25em;
+        }
+    }
+    .modal {
+        &__container {
+            width: 90vw;
         }
     }
 }
