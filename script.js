@@ -46,7 +46,7 @@ function checkString(string){
 }
 
 function toggleMensaje(texto, textoEncriptado){
-    if(checkString(texto)){
+    if(checkString(texto) && texto != ""){
         if(mensajeEncontrado.classList.contains('aside__content--none')){
             mensajeEncontrado.classList.toggle('aside__content--none');
             ningunMensaje.classList.toggle('aside__content--none');
