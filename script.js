@@ -38,7 +38,7 @@ function encriptarTexto(text, diccionario){
 }
 
 function checkString(string){
-    let check = /[^a-z0-9 \s]/g.test(string);
+    let check = /[^a-z 0-9]/g.test(string);
     if(check){
         modal.style.display = "flex";
     }
