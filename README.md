@@ -2,7 +2,7 @@
 
 # 🚀 Challenge Encriptador | Oracle + Alura
 <p align="center" >
-     <img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/screenshot.png">
+     <img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/screenshot-new.png">
 </p>
 <div align="center">
     <img src="https://img.shields.io/badge/JavaScript-FEFF01?logo=javascript&logoColor=000000&style=for-the-badge"/>
